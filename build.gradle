@@ -1,0 +1,30 @@
+plugins {
+    id 'java'
+    id 'nebula.release' version '13.0.0'
+    id 'maven-publish'
+}
+
+
+//apply plugin: "nebula.maven-publish"
+//apply plugin: "nebula.javadoc-jar"
+//apply plugin: "nebula.source-jar"
+
+group 'me.jonfuller'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+allprojects {
+    apply plugin: "nebula.release"
+    group = "me.jonfuller"
+}
+
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
