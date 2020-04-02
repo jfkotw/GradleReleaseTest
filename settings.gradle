@@ -1,2 +1,3 @@
 rootProject.name = 'GradleReleaseTest'
-
+include 'app'
+include 'api'

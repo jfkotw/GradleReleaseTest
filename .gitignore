@@ -1,3 +1,7 @@
 /build/
 /.idea/
 /.gradle/
+/app/app.iml
+/api/api.iml
+/api/build/
+/app/build/
